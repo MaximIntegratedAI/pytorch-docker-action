@@ -1,6 +1,6 @@
 # Container image that runs your code
 # Runtime is about 2GB smaller, but missing some python libs
-FROM pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime
+FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
 
 # Update and add sudo to allow for in-docker installs
 RUN apt-get update && apt-get install -y sudo
